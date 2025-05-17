@@ -31,3 +31,64 @@ Collection of exercises from the Experimental Physics and Engineering Lab 2: Mec
 
 ### Output:
 The script displays the results of each operation and verifies them where possible. It also comments on undefined operations due to dimensional incompatibility.
+
+## Homework 3
+### Problems Addressed
+1. **Patient Temperature Analysis:**
+- Reads a CSV file containing patient temperatures and ages.
+- Statistical Calculations:
+  - Mean, mode, variance, standard deviation, and median for both temperature and age.
+  - Prints the results.
+- Histograms:
+  - Plots the frequency distribution of patient temperatures using Matplotlib.
+- Mode Note:
+  - The mode of age was manually determined as 73 and 78 after filtering and counting in Excel.
+
+2. **Probability of IQ Over 110:**
+  - Given an average IQ of 100 and a standard deviation of 5, calculates the probability of an IQ exceeding 110.
+- Calculations:
+  - Computes the Z-score for 110.
+  - Uses the Z-table to find the cumulative probability and subtracts it from 1.
+- Visualization:
+  - Plots a bell curve representing the probability distribution.
+
+3. **Probability of Overfilled Cups:**
+  - For a cup-fill operation with an average of 16 oz and a standard deviation of 2 oz, calculates the probability of overfilling cups (>18 oz).
+- Calculations:
+  - Computes the Z-score for 18 oz.
+  - Uses the Z-table to determine the probability of overfilling.
+- Visualization:
+  - Displays the probability distribution with overfilled areas highlighted.
+
+4. **Product Lifetime Promotion:**
+  - For a product with an average lifetime of 4000 hours and a standard deviation of 200 hours, calculates the promotion lifetime for the bottom 2% of products.
+- Calculations:
+  - Uses the Z-score for 2% from the Z-table to compute the lifetime.
+- **Visualization**:
+  - Plots the bell curve with the promoted lifetime highlighted.
+
+5. **Warranty Calculation:**
+  - For a product with an average lifetime of 10 years and a standard deviation of 2 years, calculates the warranty period for the bottom 3%.
+- Calculations:
+  - Uses the Z-score for 3% from the Z-table to determine the warranty period.
+- Visualization:
+  - Draws a bell curve with the warranty period highlighted.
+
+### Key Functions and Libraries Used:
+1. **NumPy**:
+   - For array operations, statistical calculations, and numerical ranges.
+2. **SciPy (norm from `scipy.stats`)**:
+   - For normal distributions and probability density functions.
+3. **Matplotlib**:
+   - For plotting histograms and bell curves.
+4. **Statistics Module**:
+   - For computing mode, variance, standard deviation, and median.
+5. **Custom Function (`draw_z_score`)**:
+   - Visualizes the Z-score areas on a bell curve.
+
+### **Output:**
+The program provides:
+- Statistical summaries for temperature and age.
+- Probabilities for various scenarios (e.g., IQ, overfilled cups).
+- Recommended promotional lifetimes and warranties for products.
+- Visualizations (histograms and bell curves) to illustrate the distributions.
