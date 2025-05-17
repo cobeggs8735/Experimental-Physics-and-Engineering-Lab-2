@@ -92,3 +92,15 @@ The program provides:
 - Probabilities for various scenarios (e.g., IQ, overfilled cups).
 - Recommended promotional lifetimes and warranties for products.
 - Visualizations (histograms and bell curves) to illustrate the distributions.
+
+## Lab 4
+
+The file `ENGR216-502 Lab 4.py` is a Python script that analyzes experimental data from a physics lab exercise. Specifically, it calculates the average and standard deviation of coefficients of friction for two different surfaces ("Rubber Side" and "Wood Side"). It then computes confidence intervals for the rubber side's mean coefficient of friction using the standard error and a z-score for a 95% confidence level.
+
+**Summary**:
+- Imports the necessary libraries: `statistics` and `math`.
+- Defines two lists of measured friction coefficients: one for a rubber surface and another for a wood surface.
+- Calculates the average and standard deviation of each set of measurements.
+- Uses a z-score (1.96, corresponding to a 95% confidence interval) to compute the confidence interval for the mean coefficient of friction for the rubber side.
+
+This script is part of a lab exercise to analyze experimental results and demonstrate basic statistical calculations in physics and engineering.
